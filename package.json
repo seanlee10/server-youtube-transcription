@@ -1,0 +1,29 @@
+{
+  "name": "@sean.lee/server-youtube-transcription",
+  "version": "0.0.6",
+  "type": "module",
+  "bin": {
+    "mcp-server-youtube-transcription": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "author": "Sean Lee <yihsean@gmail.com>",
+  "license": "MIT",
+  "description": "MCP Server for Youtube Transcription",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "node-fetch": "^3.3.2",
+    "youtube-transcript": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  }
+}
